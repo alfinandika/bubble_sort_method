@@ -4,7 +4,7 @@ int bubble(int n);
 int i,j,A[N];
 int main()          
 {
-	int jml;
+	int jml=0;
 	printf("\t METODE BUBBLE SORT \n\n");
 	printf("Masukkan jumlah bilangan: ");
 	scanf("%d",&jml);
@@ -27,9 +27,9 @@ int main()
    // fungsi bubble
 int bubble(int n){
 	int temp;
-	for (i=1;i<=n-1;i++){
+	for (i=1;i<n;i++){
 		for (j=i;j<n;j++){
-			if (A[i-1]>A[j]){
+			if (A[i-1]>A[j]){ //swapping
 				temp = A[i-1];
 				A[i-1] = A[j];
 				A[j] = temp;
